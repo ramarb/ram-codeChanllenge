@@ -1,0 +1,23 @@
+GET http://192.168.1.13:8001/assets/theme1/%E2%80%9C/wp-content/uploads/2018/07/phone-call-icon.png%22 404 (Not Found)
+192.168.1.13/:213 GET http://192.168.1.13:8001/assets/theme1/uploads/2018/07/mobile-search.png 404 (Not Found)
+jquery-migrate.min.js%3Fver=1.4.1:2 JQMIGRATE: Migrate is installed, version 1.4.1
+www-widgetapi.js:106 Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.youtube.com') does not match the recipient window's origin ('http://192.168.1.13:8001').
+k.C @ www-widgetapi.js:106
+k.G @ www-widgetapi.js:103
+setInterval (async)
+cb @ www-widgetapi.js:78
+nb @ www-widgetapi.js:104
+X @ www-widgetapi.js:87
+Y @ www-widgetapi.js:108
+onYouTubeIframeAPIReady @ custom.js:12
+(anonymous) @ www-widgetapi.js:130
+(anonymous) @ www-widgetapi.js:130
+2(index):750 GET https://www.wdds.ca/wp-content/themes/images/hire-area-left-img.jpg 404 (Not Found)
+(index):420 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/hire-area-left-img.jpg net::ERR_NAME_RESOLUTION_FAILED
+(index):441 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/settings.png net::ERR_NAME_RESOLUTION_FAILED
+(index):457 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/seed-img.png net::ERR_NAME_RESOLUTION_FAILED
+(index):469 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/user.png net::ERR_NAME_RESOLUTION_FAILED
+(index):481 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/page/donate-img.png net::ERR_NAME_RESOLUTION_FAILED
+(index):610 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/08/footer-wdds-today-thumb.jpg net::ERR_NAME_RESOLUTION_FAILED
+(index):614 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/08/footer-job-links-thumb.jpg net::ERR_NAME_RESOLUTION_FAILED
+2(index):750 GET https://dev.spotmarketing.ca/wdds/wp-content/uploads/2018/07/leaves.png?id=44 net::ERR_NAME_RESOLUTION_FAILED
