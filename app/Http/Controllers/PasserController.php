@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 
 class PasserController extends Controller
 {
-    private $sort_field = 'created_at';
-    private $sort_order = 'desc';
+    private $sort_field = 'passers.full_name';
+    private $sort_order = 'asc';
     private $main_table = 'passers';
     private $controller = 'passers';
     private $view_folder = 'passer';
@@ -150,81 +150,6 @@ class PasserController extends Controller
 
         //$obj->save();
 
-
-
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-
-        p($id);
-
-        //
-        return 'you';
-        //p(Request::get('title'));
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-
-    }
-
-    /**
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function save_changes(){
-        $id = Request::input('id');
-        $message = config('app.alert_messages.record_not_found');
-        $obj = \App\Model\Event::find($id);
-
-        if(isset($obj->id)){
-
-            $obj->title = Request::input('title');
-            $obj->uri = Request::input('uri');
-            $obj->picture_link = Request::input('picture_link');
-            $obj->summary_content = Request::input('summary_content');
-            $obj->full_content = Request::input('content');
-            $obj->date = Request::input('date');
-            $obj->featured = 0;
-            $obj->published = 0;
-
-            if(Request::input('featured')){
-                $obj->featured = 1;
-            }
-
-            if(Request::input('published')){
-                $obj->published = 1;
-            }
-
-            $obj->save();
-            $message = config('app.alert_messages.update_success');
-        }
-        return redirect('/admin/' . $this->controller)->with('success', $message);
-    }
-
-    public function remove(){
-
-        $obj =  \App\Model\Event::find(Request::input('id'));
-        $message = config('app.alert_messages.record_not_found');
-        if(isset($obj->id) && $obj->id){
-            $obj->delete();
-            $message = config('app.alert_messages.delete_success');
-        }
-
-        return redirect('/admin/' . $this->controller)->with('success', $message);
-    }
 }
